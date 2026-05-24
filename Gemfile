@@ -11,7 +11,6 @@ gem "jekyll-sass-converter","~> 2.0"
 #如果你用了 github-pages，也可以加上(二选一即可)
 # gem "github-pages", group: :jekyll_plugins
 
-
 gem "rake"
 
 gem "webrick", "~> 1.7"
