@@ -37,7 +37,7 @@ Android Studio可以帮助开发者更快速、更有效地开发Android应用�
 ##### 配置
 1.下载好后进行Java环境配置，找到系统——>系统信息——>高级系统设置——>环境变量——>系统变量，点击新建两个变量，找到你下载Java的位置，进行如下操作
 ​​​​​​​
-​<img width="863" height="863" alt="BB" src="https://github.com/user-attachments/assets/fc45f78c-ce68-4142-8d7e-f1d850727437" />
+​![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8c768db4d8fe476d94856a6eedaadc87.png)
 
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/48b46fa2e5d24d6bbf8012dfec329e9d.png)
  
