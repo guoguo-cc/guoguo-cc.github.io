@@ -22,6 +22,7 @@ Android Studio可以帮助开发者更快速、更有效地开发Android应用�
    Unity Remote5: 
    IOS端在App Store里面搜索Unity Remote下载就可以 
    Android端不能直接下载需要在Google商店搜索
+   
    Unity Remote下载(需联网)或者百度搜索Unity remote 5对应的apk也可以(网上百度网盘等资源很容易找到，亲测有用)
 ## 2.软件功能简介
 ### Android studio
