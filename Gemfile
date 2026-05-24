@@ -3,7 +3,7 @@ gem 'jekyll-paginate'
 
 
 #基础 Jekyl1依赖
-gem "jekyl1", "~> 4.4"
+gem "jekyll", "~> 4.4"
 
 # 关键:强制锁定兼容版本，解决sass-embedded报错
 gem "jekyll-sass-converter","~> 2.0"
