@@ -1,0 +1,209 @@
+---
+layout:        post
+title:         "Unity移动端调试全家桶"
+author:        "过过"
+header-style: text
+catalog:      true
+tags:
+    -Web
+    -Javascript
+---
+Android Studio是谷歌推出的Android集成开发工具，基于IntelliJ IDEA。它提供了一系列的Android开发工具，包括用于开发和调试的集成开发环境。
+
+Android Studio可以帮助开发者更快速、更有效地开发Android应用程序。
+
+@[TOC](文章目录)
+
+---
+
+
+
+
+# 使用Unity Remote5与unity连接，移动端进行同步测试详细教程
+## 1.所需软件的获取途径
+   Java SE官方地址：[链接](https://www.oracle.com/java/technologies/downloads/?er=221886)（国内）
+   Android studio官网：[链接](https://developer.android.com/studio?hl=zh-cn)（国外）[链接](https://developer.android.google.cn/studio)（国内）
+   
+   Unity Remote5: 
+   IOS端在App Store里面搜索Unity Remote下载就可以 
+   Android端不能直接下载需要在Google商店搜索
+   Unity Remote下载(需联网)或者百度搜索Unity remote 5对应的apk也可以(网上百度网盘等资源很容易找到，亲测有用)
+## 2.软件功能简介
+### Android studio
+        Android Studio是谷歌推出的Android集成开发工具，基于IntelliJ IDEA。 它提供了一系列的Android开发工具，包括用于开发和调试的集成开发环境。 Android Studio可以帮助开发者更快速、更有效地开发Android应用程序。
+### Unity Remote5
+        Unity Remote 是可下载的应用程序，旨在帮助进行 Android、iOS 和 tvOS 开发。从 Unity Editor 以播放模式运行项目时，该应用程序将与 Unity 连接。Editor 的可视输出将发送到设备的屏幕，而实时输入将发送回 Unity 中正在运行的项目。这样，您可以很好地了解您的游戏在目标设备上的真实视觉效果和处理方式，而又省去了针对每项测试进行完整构建的麻烦。
+**Unity Remote - Unity 手册**
+[链接](https://docs.unity3d.com/cn/2019.4/Manual/UnityRemote5.html)
+**==注意==：要使 Unity Remote 正常工作，必须在开发计算机上安装 Android SDK（下面会讲到）**
+## 3.软件安装（配置）
+### 电脑上
+#### Java SE
+##### 配置
+1.下载好后进行Java环境配置，找到系统——>系统信息——>高级系统设置——>环境变量——>系统变量，点击新建两个变量，找到你下载Java的位置，进行如下操作
+​​​![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8c768db4d8fe476d94856a6eedaadc87.png)​
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/48b46fa2e5d24d6bbf8012dfec329e9d.png)
+ 
+ 2.找到Path,点击进入后添加%JAVA_HOME%\bin   和   C:\Program Files\Java\jre-1.8\bin
+![编辑](https://i-blog.csdnimg.cn/direct/d952ac4a1b5e4fb4b9a63bf77772a169.png)
+##### 查询
+确认系统是否已经安装完成，按下windows+R打开命令行，可以输入java， javac， java -version,
+javac -version进行查看，显示如下即为安装成功
+​​![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b4d72e7f0e494555af0321ede35ae8fb.png)
+#### Android studio
+##### 安装
+1.通过上方链接进行下载，可根据需求自行选择版本，一般不建议选择太新的版本（容易出bug）下载后的文件如图所示
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c8d970268241468db5a02a189ae40078.png)
+
+2.双击文件，进入安装界面，点击“next”进入下一步
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/50308aa255a8491aa9923d314ebab803.png )
+
+3.这里默认为C盘，但建议安装到其他盘(一般软件不要装到C盘)
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/406dab2f3d4640a78ea513b46b275583.png)
+
+4.点击Install
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8685b878ebad4a3a86a7acde4545d24c.png)
+
+5.点击next
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8df40131cbb047109ae8455bedd879cd.png)
+
+6.点击Finish
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8bb4280d50d04d07820d0e1e27a6308d.png)
+
+7.选择OK
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/3feb9f538297473aa65cd5adae8ce41c.png)
+
+8.选择Cancel
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2aafdb927cf84a498e54aea89425cb02.png)
+
+9.点击Next
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/404bdf4f4ff04d2baaa4d9d24c3149a8.png)
+
+10.选择Custom,点击Next
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/deabecce0a8f4606833bb3383afbcc4b.png)
+
+11.点击Next,选项中的内容安装好后也可再勾选安装
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/237a031e9c134c3abf014a0098010956.png)
+
+12.点击Next，默认2GB即可
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/9b39fa07d9394d7ebb1f727aefce0a42.png)
+
+13.点击Finish,进行安装（需要连接网络，开始下载缓慢没有进度条正常，耐心等待）
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d926ff003df044d2a9081941ee69588a.png)
+
+14.安装成功，点击Finish
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d21ffd35b1f14bed9fbd5b2ff9e5abb6.png)
+##### 配置
+1.配置环境变量
+   找到系统——>系统信息——>高级系统设置——>环境变量——>系统变量，点击新建如图所示
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/da2c138046c84722ad0a7b87e7139932.png)
+
+找到Path，点击进入后添加%ANDROID_HOME%\tools
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8f8e38c183894489be196a998bb99011.png)
+
+2.进入Android Studio界面，点击More Action，选择SDK Manager
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/adebdf4ae2d445498df4aa740889c881.png)
+
+3.这里默认是安装最新版本Android API 35，我的手机Android版本是14.0，所以还要勾选Android 14.0（大家注意安装与自己手机相匹配的SDK），这里的Android SDK Location为SDK安装路径，之后配置Unity时会用到
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/1684cdb50a6c4bf19738045e25f8a14b.png)
+
+4.点击**SDK Tools**，注意根据下图进行勾选，否则调试Unity时会出各种问题，默认条件下没有Android SDK Tools点击**Hide Obsolete Packages**取消勾选即可找到并下载，它是Android Studio中用来管理各种版本Android SDK的工具，下滑注意勾选**Google USB Driver**
+
+Google USB Driver是从Google Android SDK中提取出来的一款USB驱动程序，主要作用是让Android设备与计算机间的数据通讯更为稳定、快速和安全。**如果你想在开发Android应用程序或者进行某些操作时连接你的Android设备到电脑上，就必须要安装这个驱动程序**
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c29ab5957a4845eba085357c8b07465b.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c99ba160c2554d16b4ec4ec3ca82399d.png)
+
+安装好Google USB Driver驱动程序后，需要**设置系统以检测设备**
+1.	将您的 Android 设备连接到计算机的 USB 端口。
+2.	从 Windows 资源管理器中打开“计算机管理”。
+3.	在“计算机管理”左侧窗格中，选择“设备管理器”。
+4.	在设备管理器右窗格中，找到并展开便携式设备或 其他设备（具体取决于您看到的设备）。
+5.	右键单击所连接的设备的名称，然后选择“更新驱动程序软件”。
+6.	在硬件更新向导中，选择“浏览计算机以查找驱动程序软件” ，然后单击“下一步”。
+7.	单击“浏览”，然后找到 USB 驱动程序文件夹。例如，我的Google USB 驱动程序位于E:\Android\Sdk\extras\google\usb_driver\。
+8.	单击“下一步”安装驱动程序。
+==**建议可以查看官方手册**==：[链接](https://developer.android.com/studio/run/device?hl=zh-cn)
+
+5.**电脑上已全部配置完成，可以到手机端进行操作**，全部调试完成后用USB线将移动设备与电脑连接起来，在命令行测试电脑端是否已经成功连接该设备，找到你下载Android SDK下platform-tools的路径，我的路径为E:\Android\Sdk\platform-tools，具体操作如下，出现方框中的内容即为成功，若不显示，可能是端口已被占用，输入adb kill-server，再输入adb devices即可
+**接下来到Unity上进行操作**
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/69611aa0caa241b19853b4af31d0e47c.jpeg)
+### 手机上
+#### 安装Unity Remote 5
+**图标如下**
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/1ba44b4207b240a980d1538b7028312d.png)
+
+#### Android端需要打开开发者模式
+
+1.点击手机的设置
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/3ef125fb742547b3907a576f2b041e9b.png)
+
+2.打开后找到“关于手机”，进入并连续点击版本号7次（一般情况），开启开发者模式，如图所示
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/1fea4925f12f4b70be768deecc22ac2c.png)
+
+3.接着找到系统和更新，进入后选择开发者人员选项，然后打开开发者人员选项
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/bf301c3020544e3ab7ed69f0644881b2.png)
+
+  4.下滑找到USB调试和“仅充电”模式下允许ADB调试并打开，找到选择USB配置，选择RNDIS（USB以太网），一定不要设置为“仅充电” 具体操作如下
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d56d7075e9314f7b96e6b306efed5283.png)
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/f398aa75dfba4eb2a33ee57ce5f12b5c.png)
+
+### Untiy
+#### 编辑器Unity Remote插件安装
+1.打开Unity, 在上方菜单栏找到Window—>Package Manager，搜索Input System进行安装，如下
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/01e94c1d6d684359be838bd4cbbd54da.png)
+
+2.然后我们需要先安装InputSystem插件，在Input System右边的属性面板找到Samples并点击，下滑找到Unity Remote，选择Import进行导入，如图所示
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2a79c5a80a5640699626086225a00d6d.png)
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/41297898129a4804ba4d0f43d28280b0.png)
+#### 配置
+1.在Unity上方菜单栏中找到File——>Build Settings,将平台从Windows切换到Android，没有安卓平台的小伙伴需要先进行下载，点击框住的区域即可，具体操作如下
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b517f25e88cb458e9e129c33683c6ffb.png)
+
+2.在Unity上方菜单栏中找到Edit——>Project Settings，打开Editor，找到Device选择Any Android Device，操作如下（如果选择对应平台后还没有出现就拔掉数据线后进行重试）
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/fb6578b0fe784d96a37ee11d74ae35a6.png)
+
+3.可能Unity没有识别到你的Android SDK，所以需要手动指定路径，在Unity上方菜单栏中找到Edit——>Preferences——>External Tools，下滑找到**Android SDK Tools Installed with Unity (recommended)**，点击Browse，将之前安装的Android SDK 路径输入即可
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/0374caf82ef946a68e8913b9727b50bd.png)
+
+4.全部完成后关闭Unity，点击手机上的Unity Remote 5的图标，（**此时确保手机与电脑已通过USB连接，手机已打开开发者模式**），**重新启动Unity**，点击运行你的游戏，此时手机端与电脑端会同步显示画面，可以继续进行你的创作啦！
+==**注**==：不显示画面可能是因为USB数据线的问题(不稳定)，请换一根再进行尝试
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/356d8494beb242ecb84f2906bd76b9b2.png)
+       
+**文章到这里就结束了，感谢各位小伙伴们观看到这里，希望我的分享可以给你们带来帮助，这将是我不断创作的巨大动力！**
+
+**==推荐视频==：Unity移动端入门 - Android那些事（2018版）_哔哩哔哩_bilibili**      [链接](https://www.bilibili.com/video/BV1SN411h7pp/?p&vd_source=a4ea1b80fd4f53aadee944665de0d6d5)
+**==推荐手册==**：**Unity Remote - Unity 手册** [链接](https://docs.unity3d.com/cn/2019.4/Manual/UnityRemote5.html)，
+**Android 调试桥 (adb) - Android 手册**  [链接](https://developer.android.com/tools/adb?hl=zh-cn#issuingcommands)
+            
