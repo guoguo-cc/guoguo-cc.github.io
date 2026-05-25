@@ -38,68 +38,77 @@ Android Studio可以帮助开发者更快速、更有效地开发Android应用�
 ##### 配置
 1.下载好后进行Java环境配置，找到系统——>系统信息——>高级系统设置——>环境变量——>系统变量，点击新建两个变量，找到你下载Java的位置，进行如下操作
 
-![img](/img/BB.jpg)​
+![img](/img/csdn.A1.png)
+
+![img](/img/csdn.A2.png)
 ​
- 
- 2.找到Path,点击进入后添加%JAVA_HOME%\bin   和   C:\Program Files\Java\jre-1.8\bin
+2.找到Path,点击进入后添加%JAVA_HOME%\bin   和   C:\Program Files\Java\jre-1.8\bin
+
+![img](/img/csdn.A3.png)
 
 ##### 查询
 确认系统是否已经安装完成，按下windows+R打开命令行，可以输入java， javac， java -version,
 javac -version进行查看，显示如下即为安装成功
+
+![img](/img/csdn.A4.png)
 ​​
 #### Android studio
 ##### 安装
 1.通过上方链接进行下载，可根据需求自行选择版本，一般不建议选择太新的版本（容易出bug）下载后的文件如图所示
 
+![img](/img/csdn.A5.png)
+
 2.双击文件，进入安装界面，点击“next”进入下一步
 
-
+![img](/img/csdn.A6.png)
 
 3.这里默认为C盘，但建议安装到其他盘(一般软件不要装到C盘)
 
-
+![img](/img/csdn.A7.png)
 
 4.点击Install
 
-
+![img](/img/csdn.A8.png)
 
 5.点击next
 
+![img](/img/csdn.A9.png)
 
 6.点击Finish
 
-
+![img](/img/csdn.A10.png)
 
 7.选择OK
 
-
+![img](/img/csdn.A11.png)
 
 8.选择Cancel
 
-
+![img](/img/csdn.A12.png)
 
 9.点击Next
 
-
+![img](/img/csdn.A13.png)
 
 10.选择Custom,点击Next
 
-
+![img](/img/csdn.A14.png)
 
 11.点击Next,选项中的内容安装好后也可再勾选安装
 
-
+![img](/img/csdn.A15.png)
 
 12.点击Next，默认2GB即可
 
-
+![img](/img/csdn.A16.png)
 
 13.点击Finish,进行安装（需要连接网络，开始下载缓慢没有进度条正常，耐心等待）
 
-
+![img](/img/csdn.A17.png)
 
 14.安装成功，点击Finish
 
+![img](/img/csdn.A18.png)
 
 ##### 配置
 1.配置环境变量
