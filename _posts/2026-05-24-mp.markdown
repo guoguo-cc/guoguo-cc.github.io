@@ -114,24 +114,27 @@ javac -version进行查看，显示如下即为安装成功
 1.配置环境变量
    找到系统——>系统信息——>高级系统设置——>环境变量——>系统变量，点击新建如图所示
 
-
+![img](/img/csdn/A19.png)
 
 找到Path，点击进入后添加%ANDROID_HOME%\tools
 
-
+![img](/img/csdn/A20.png)
 
 2.进入Android Studio界面，点击More Action，选择SDK Manager
 
-
+![img](/img/csdn/A21.png)
 
 3.这里默认是安装最新版本Android API 35，我的手机Android版本是14.0，所以还要勾选Android 14.0（大家注意安装与自己手机相匹配的SDK），这里的Android SDK Location为SDK安装路径，之后配置Unity时会用到
 
-
+![img](/img/csdn/A22.png)
 
 4.点击**SDK Tools**，注意根据下图进行勾选，否则调试Unity时会出各种问题，默认条件下没有Android SDK Tools点击**Hide Obsolete Packages**取消勾选即可找到并下载，它是Android Studio中用来管理各种版本Android SDK的工具，下滑注意勾选**Google USB Driver**
 
 Google USB Driver是从Google Android SDK中提取出来的一款USB驱动程序，主要作用是让Android设备与计算机间的数据通讯更为稳定、快速和安全。**如果你想在开发Android应用程序或者进行某些操作时连接你的Android设备到电脑上，就必须要安装这个驱动程序**
 
+![img](/img/csdn/A23.png)
+
+![img](/img/csdn/A24.png)
 
 安装好Google USB Driver驱动程序后，需要**设置系统以检测设备**
 1.	将您的 Android 设备连接到计算机的 USB 端口。
@@ -147,58 +150,63 @@ Google USB Driver是从Google Android SDK中提取出来的一款USB驱动程序
 5.**电脑上已全部配置完成，可以到手机端进行操作**，全部调试完成后用USB线将移动设备与电脑连接起来，在命令行测试电脑端是否已经成功连接该设备，找到你下载Android SDK下platform-tools的路径，我的路径为E:\Android\Sdk\platform-tools，具体操作如下，出现方框中的内容即为成功，若不显示，可能是端口已被占用，输入adb kill-server，再输入adb devices即可
 **接下来到Unity上进行操作**
 
+![img](/img/csdn/A25.jpeg)
 
 ### 手机上
 #### 安装Unity Remote 5
 **图标如下**
 
-
+![img](/img/csdn/A26.png)
 
 #### Android端需要打开开发者模式
 
 1.点击手机的设置
 
-
+![img](/img/csdn/A27.png)
 
 2.打开后找到“关于手机”，进入并连续点击版本号7次（一般情况），开启开发者模式，如图所示
 
-
+![img](/img/csdn/A28.png)
 
 3.接着找到系统和更新，进入后选择开发者人员选项，然后打开开发者人员选项
 
-
+![img](/img/csdn/A29.png)
 
   4.下滑找到USB调试和“仅充电”模式下允许ADB调试并打开，找到选择USB配置，选择RNDIS（USB以太网），一定不要设置为“仅充电” 具体操作如下
 
+![img](/img/csdn/A30.png)
 
+![img](/img/csdn/A31.png)
 
 ### Untiy
 #### 编辑器Unity Remote插件安装
 1.打开Unity, 在上方菜单栏找到Window—>Package Manager，搜索Input System进行安装，如下
 
-
+![img](/img/csdn/A32.png)
 
 2.然后我们需要先安装InputSystem插件，在Input System右边的属性面板找到Samples并点击，下滑找到Unity Remote，选择Import进行导入，如图所示
 
+![img](/img/csdn/A33.png)
 
+![img](/img/csdn/A34.png)
 
 #### 配置
 1.在Unity上方菜单栏中找到File——>Build Settings,将平台从Windows切换到Android，没有安卓平台的小伙伴需要先进行下载，点击框住的区域即可，具体操作如下
 
-
+![img](/img/csdn/A35.png)
 
 2.在Unity上方菜单栏中找到Edit——>Project Settings，打开Editor，找到Device选择Any Android Device，操作如下（如果选择对应平台后还没有出现就拔掉数据线后进行重试）
 
-
+![img](/img/csdn/A36.png)
 
 3.可能Unity没有识别到你的Android SDK，所以需要手动指定路径，在Unity上方菜单栏中找到Edit——>Preferences——>External Tools，下滑找到**Android SDK Tools Installed with Unity (recommended)**，点击Browse，将之前安装的Android SDK 路径输入即可
 
-
+![img](/img/csdn/A37.png)
 
 4.全部完成后关闭Unity，点击手机上的Unity Remote 5的图标，（**此时确保手机与电脑已通过USB连接，手机已打开开发者模式**），**重新启动Unity**，点击运行你的游戏，此时手机端与电脑端会同步显示画面，可以继续进行你的创作啦！
 ==**注**==：不显示画面可能是因为USB数据线的问题(不稳定)，请换一根再进行尝试
 
-
+![img](/img/csdn/A38.png)
        
 **文章到这里就结束了，感谢各位小伙伴们观看到这里，希望我的分享可以给你们带来帮助，这将是我不断创作的巨大动力！**
 
