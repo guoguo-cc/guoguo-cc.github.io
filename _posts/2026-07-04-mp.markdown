@@ -28,8 +28,7 @@ tags:
 ### 运行平台 Android / WebGL
 
 1.游戏内容展示
-
-![img](/img/csdn/works/Dice1(1).jpg)
+<img src="/img/csdn/works/Dice1.jpg" alt="游戏截图" style="width:50%; height:auto;">
 
 ![img](/img/csdn/works/Dice2.jpg)
 
