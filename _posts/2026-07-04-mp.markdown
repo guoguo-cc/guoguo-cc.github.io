@@ -1,1 +1,208 @@
-作品集
+---
+layout:        post
+title:         "个人作品集"
+author:        "过过"
+header-style: text
+catalog:      true
+tags:
+    -Unity
+    -游戏开发
+---
+
+本作品集收录本人独立开发、团队协作及商业上线的多款完整游戏项目与技术原型，覆盖健身竞技、棋牌小游戏、休闲益智、移动端跨平台等多元品类，完整呈现从概念策划、引擎开发、功能落地到性能优化的全流程游戏开发能力。
+
+仓库汇总本人全部 Unity / 游戏开发实战项目，涵盖单机闯关、多人联机、移动端健身交互、棋牌小游戏、技术原型 Demo。所有工程完整开源，包含全套 C# 业务代码、UI 预制体、资源配置、打包适配脚本。
+项目聚焦客户端核心开发能力：游戏主循环、角色 Avatar 换装、FTMS 蓝牙设备通信、网络帧同步、对象池性能优化、Addressables 资源管理、跨平台权限适配、排行榜数据差分同步。区分单人独立项目与多人组队赛事作品，标注个人负责模块、开发时长、引擎版本与平台适配方案，配套实机演示截图与运行教程，完整记录从原型搭建到上线级工程优化全流程，可直观查阅游戏系统架构与标准化开发思路。
+
+
+---
+# 使用Unity Remote5与unity连接，移动端进行同步测试详细教程
+## 1.所需软件的获取途径
+  
+## 2.软件功能简介
+### Android studio
+        Android Studio是谷歌推出的Android集成开发工具，基于IntelliJ IDEA。 它提供了一系列的Android开发工具，包括用于开发和调试的集成开发环境。 Android Studio可以帮助开发者更快速、更有效地开发Android应用程序。
+
+
+## 3.小娱大话骰（多人单机棋牌）
+### 运行平台 Android / WebGL
+
+1.游戏内容展示
+
+![img](/img/csdn/Dice1.jpg)
+
+![img](/img/csdn/Dice2.jpg)
+
+![img](/img/csdn/Dice3.jpg)
+
+![img](/img/csdn/Dice4.jpg)
+
+![img](/img/csdn/Dice5.jpg)
+​
+
+
+
+
+​​
+#### Android studio
+##### 安装
+1.通过上方链接进行下载，可根据需求自行选择版本，一般不建议选择太新的版本（容易出bug）下载后的文件如图所示
+
+![img](/img/csdn/A5.png)
+
+2.双击文件，进入安装界面，点击“next”进入下一步
+
+![img](/img/csdn/A6.png)
+
+3.这里默认为C盘，但建议安装到其他盘(一般软件不要装到C盘)
+
+![img](/img/csdn/A7.png)
+
+4.点击Install
+
+![img](/img/csdn/A8.png)
+
+5.点击next
+
+![img](/img/csdn/A9.png)
+
+6.点击Finish
+
+![img](/img/csdn/A10.png)
+
+7.选择OK
+
+![img](/img/csdn/A11.png)
+
+8.选择Cancel
+
+![img](/img/csdn/A12.png)
+
+9.点击Next
+
+![img](/img/csdn/A13.png)
+
+10.选择Custom,点击Next
+
+![img](/img/csdn/A14.png)
+
+11.点击Next,选项中的内容安装好后也可再勾选安装
+
+![img](/img/csdn/A15.png)
+
+12.点击Next，默认2GB即可
+
+![img](/img/csdn/A16.png)
+
+13.点击Finish,进行安装（需要连接网络，开始下载缓慢没有进度条正常，耐心等待）
+
+![img](/img/csdn/A17.png)
+
+14.安装成功，点击Finish
+
+![img](/img/csdn/A18.png)
+
+##### 配置
+1.配置环境变量
+   找到系统——>系统信息——>高级系统设置——>环境变量——>系统变量，点击新建如图所示
+
+![img](/img/csdn/A19.png)
+
+找到Path，点击进入后添加%ANDROID_HOME%\tools
+
+![img](/img/csdn/A20.png)
+
+2.进入Android Studio界面，点击More Action，选择SDK Manager
+
+![img](/img/csdn/A21.png)
+
+3.这里默认是安装最新版本Android API 35，我的手机Android版本是14.0，所以还要勾选Android 14.0（大家注意安装与自己手机相匹配的SDK），这里的Android SDK Location为SDK安装路径，之后配置Unity时会用到
+
+![img](/img/csdn/A22.png)
+
+4.点击**SDK Tools**，注意根据下图进行勾选，否则调试Unity时会出各种问题，默认条件下没有Android SDK Tools点击**Hide Obsolete Packages**取消勾选即可找到并下载，它是Android Studio中用来管理各种版本Android SDK的工具，下滑注意勾选**Google USB Driver**
+
+Google USB Driver是从Google Android SDK中提取出来的一款USB驱动程序，主要作用是让Android设备与计算机间的数据通讯更为稳定、快速和安全。**如果你想在开发Android应用程序或者进行某些操作时连接你的Android设备到电脑上，就必须要安装这个驱动程序**
+
+![img](/img/csdn/A23.png)
+
+![img](/img/csdn/A24.png)
+
+安装好Google USB Driver驱动程序后，需要**设置系统以检测设备**
+1.	将您的 Android 设备连接到计算机的 USB 端口。
+2.	从 Windows 资源管理器中打开“计算机管理”。
+3.	在“计算机管理”左侧窗格中，选择“设备管理器”。
+4.	在设备管理器右窗格中，找到并展开便携式设备或 其他设备（具体取决于您看到的设备）。
+5.	右键单击所连接的设备的名称，然后选择“更新驱动程序软件”。
+6.	在硬件更新向导中，选择“浏览计算机以查找驱动程序软件” ，然后单击“下一步”。
+7.	单击“浏览”，然后找到 USB 驱动程序文件夹。例如，我的Google USB 驱动程序位于E:\Android\Sdk\extras\google\usb_driver\。
+8.	单击“下一步”安装驱动程序。
+==**建议可以查看官方手册**==：[链接](https://developer.android.com/studio/run/device?hl=zh-cn)
+
+5.**电脑上已全部配置完成，可以到手机端进行操作**，全部调试完成后用USB线将移动设备与电脑连接起来，在命令行测试电脑端是否已经成功连接该设备，找到你下载Android SDK下platform-tools的路径，我的路径为E:\Android\Sdk\platform-tools，具体操作如下，出现方框中的内容即为成功，若不显示，可能是端口已被占用，输入adb kill-server，再输入adb devices即可
+**接下来到Unity上进行操作**
+
+![img](/img/csdn/A25.jpeg)
+
+### 手机上
+#### 安装Unity Remote 5
+**图标如下**
+
+![img](/img/csdn/A26.png)
+
+#### Android端需要打开开发者模式
+
+1.点击手机的设置
+
+![img](/img/csdn/A27.png)
+
+2.打开后找到“关于手机”，进入并连续点击版本号7次（一般情况），开启开发者模式，如图所示
+
+![img](/img/csdn/A28.png)
+
+3.接着找到系统和更新，进入后选择开发者人员选项，然后打开开发者人员选项
+
+![img](/img/csdn/A29.png)
+
+  4.下滑找到USB调试和“仅充电”模式下允许ADB调试并打开，找到选择USB配置，选择RNDIS（USB以太网），一定不要设置为“仅充电” 具体操作如下
+
+![img](/img/csdn/A30.png)
+
+![img](/img/csdn/A31.png)
+
+### Untiy
+#### 编辑器Unity Remote插件安装
+1.打开Unity, 在上方菜单栏找到Window—>Package Manager，搜索Input System进行安装，如下
+
+![img](/img/csdn/A32.png)
+
+2.然后我们需要先安装InputSystem插件，在Input System右边的属性面板找到Samples并点击，下滑找到Unity Remote，选择Import进行导入，如图所示
+
+![img](/img/csdn/A33.png)
+
+![img](/img/csdn/A34.png)
+
+#### 配置
+1.在Unity上方菜单栏中找到File——>Build Settings,将平台从Windows切换到Android，没有安卓平台的小伙伴需要先进行下载，点击框住的区域即可，具体操作如下
+
+![img](/img/csdn/A35.png)
+
+2.在Unity上方菜单栏中找到Edit——>Project Settings，打开Editor，找到Device选择Any Android Device，操作如下（如果选择对应平台后还没有出现就拔掉数据线后进行重试）
+
+![img](/img/csdn/A36.png)
+
+3.可能Unity没有识别到你的Android SDK，所以需要手动指定路径，在Unity上方菜单栏中找到Edit——>Preferences——>External Tools，下滑找到**Android SDK Tools Installed with Unity (recommended)**，点击Browse，将之前安装的Android SDK 路径输入即可
+
+![img](/img/csdn/A37.png)
+
+4.全部完成后关闭Unity，点击手机上的Unity Remote 5的图标，（**此时确保手机与电脑已通过USB连接，手机已打开开发者模式**），**重新启动Unity**，点击运行你的游戏，此时手机端与电脑端会同步显示画面，可以继续进行你的创作啦！
+==**注**==：不显示画面可能是因为USB数据线的问题(不稳定)，请换一根再进行尝试
+
+![img](/img/csdn/A38.png)
+       
+**文章到这里就结束了，感谢各位小伙伴们观看到这里，希望我的分享可以给你们带来帮助，这将是我不断创作的巨大动力！**
+
+**==推荐视频==：Unity移动端入门 - Android那些事（2018版）_哔哩哔哩_bilibili**      [链接](https://www.bilibili.com/video/BV1SN411h7pp/?p&vd_source=a4ea1b80fd4f53aadee944665de0d6d5)
+**==推荐手册==**：**Unity Remote - Unity 手册** [链接](https://docs.unity3d.com/cn/2019.4/Manual/UnityRemote5.html)，
+**Android 调试桥 (adb) - Android 手册**  [链接](https://developer.android.com/tools/adb?hl=zh-cn#issuingcommands)
+            
