@@ -29,7 +29,7 @@ tags:
 
 1.游戏内容展示
 
-![img](/img/csdn/works/Dice1.jpg)
+![img](/img/csdn/works/Dice1(1).jpg)
 
 ![img](/img/csdn/works/Dice2.jpg)
 
