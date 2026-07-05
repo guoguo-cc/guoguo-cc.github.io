@@ -16,16 +16,22 @@ tags:
 
 
 ---
-# 使用Unity Remote5与unity连接，移动端进行同步测试详细教程
-## 1.所需软件的获取途径
+# 作品集
+## 一、展示
+
+github：https://github.com/guoguo-cc/Personal-work-collection（作品集视频地址）或百度网盘
+
+CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
   
-## 2.软件功能简介
-### Android studio
+## 二、项目
+### 1.iConsolePro（健身App - 已上线应用宝/苹果商店）
         Android Studio是谷歌推出的Android集成开发工具，基于IntelliJ IDEA。 它提供了一系列的Android开发工具，包括用于开发和调试的集成开发环境。 Android Studio可以帮助开发者更快速、更有效地开发Android应用程序。
 
+### 2.小娱大话骰（多人单机棋牌）
 
-## 3.小娱大话骰（多人单机棋牌）
-### 运行平台 Android / WebGL
+### 3.微笑方格（独立开发）
+
+#### 运行平台 Android / WebGL
 
 1.游戏内容展示
 
