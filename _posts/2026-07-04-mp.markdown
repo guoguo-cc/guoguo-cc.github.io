@@ -27,11 +27,23 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 ### 1.iConsolePro（健身App - 已上线应用宝/苹果商店）
         Android Studio是谷歌推出的Android集成开发工具，基于IntelliJ IDEA。 它提供了一系列的Android开发工具，包括用于开发和调试的集成开发环境。 Android Studio可以帮助开发者更快速、更有效地开发Android应用程序。
 
+![img](/img/csdn/works/Run1.jpg)
+
+![img](/img/csdn/works/Run2.jpg)
+
+![img](/img/csdn/works/Bike1.jpg)
+
+![img](/img/csdn/works/Bike2.jpg)
+
+![img](/img/csdn/works/Bike3.jpg)     
+
+![img](/img/csdn/works/Rower1.jpg)  
+
+![img](/img/csdn/works/Rower2.jpg)  
+
+![img](/img/csdn/works/Rower3.jpg) 
+
 ### 2.小娱大话骰（多人单机棋牌）
-
-### 3.微笑方格（独立开发）
-
-#### 运行平台 Android / WebGL
 
 1.游戏内容展示
 
@@ -44,111 +56,15 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 ![img](/img/csdn/works/Dice4.jpg)
 
 ![img](/img/csdn/works/Dice5.jpg)
+
+### 3.微笑方格（独立开发）
+
+#### 运行平台 Android / WebGL
+
+
 ​
 
 
-
-
-​​
-#### Android studio
-##### 安装
-1.通过上方链接进行下载，可根据需求自行选择版本，一般不建议选择太新的版本（容易出bug）下载后的文件如图所示
-
-![img](/img/csdn/A5.png)
-
-2.双击文件，进入安装界面，点击“next”进入下一步
-
-![img](/img/csdn/A6.png)
-
-3.这里默认为C盘，但建议安装到其他盘(一般软件不要装到C盘)
-
-![img](/img/csdn/A7.png)
-
-4.点击Install
-
-![img](/img/csdn/A8.png)
-
-5.点击next
-
-![img](/img/csdn/A9.png)
-
-6.点击Finish
-
-![img](/img/csdn/A10.png)
-
-7.选择OK
-
-![img](/img/csdn/A11.png)
-
-8.选择Cancel
-
-![img](/img/csdn/A12.png)
-
-9.点击Next
-
-![img](/img/csdn/A13.png)
-
-10.选择Custom,点击Next
-
-![img](/img/csdn/A14.png)
-
-11.点击Next,选项中的内容安装好后也可再勾选安装
-
-![img](/img/csdn/A15.png)
-
-12.点击Next，默认2GB即可
-
-![img](/img/csdn/A16.png)
-
-13.点击Finish,进行安装（需要连接网络，开始下载缓慢没有进度条正常，耐心等待）
-
-![img](/img/csdn/A17.png)
-
-14.安装成功，点击Finish
-
-![img](/img/csdn/A18.png)
-
-##### 配置
-1.配置环境变量
-   找到系统——>系统信息——>高级系统设置——>环境变量——>系统变量，点击新建如图所示
-
-![img](/img/csdn/A19.png)
-
-找到Path，点击进入后添加%ANDROID_HOME%\tools
-
-![img](/img/csdn/A20.png)
-
-2.进入Android Studio界面，点击More Action，选择SDK Manager
-
-![img](/img/csdn/A21.png)
-
-3.这里默认是安装最新版本Android API 35，我的手机Android版本是14.0，所以还要勾选Android 14.0（大家注意安装与自己手机相匹配的SDK），这里的Android SDK Location为SDK安装路径，之后配置Unity时会用到
-
-![img](/img/csdn/A22.png)
-
-4.点击**SDK Tools**，注意根据下图进行勾选，否则调试Unity时会出各种问题，默认条件下没有Android SDK Tools点击**Hide Obsolete Packages**取消勾选即可找到并下载，它是Android Studio中用来管理各种版本Android SDK的工具，下滑注意勾选**Google USB Driver**
-
-Google USB Driver是从Google Android SDK中提取出来的一款USB驱动程序，主要作用是让Android设备与计算机间的数据通讯更为稳定、快速和安全。**如果你想在开发Android应用程序或者进行某些操作时连接你的Android设备到电脑上，就必须要安装这个驱动程序**
-
-![img](/img/csdn/A23.png)
-
-![img](/img/csdn/A24.png)
-
-安装好Google USB Driver驱动程序后，需要**设置系统以检测设备**
-1.	将您的 Android 设备连接到计算机的 USB 端口。
-2.	从 Windows 资源管理器中打开“计算机管理”。
-3.	在“计算机管理”左侧窗格中，选择“设备管理器”。
-4.	在设备管理器右窗格中，找到并展开便携式设备或 其他设备（具体取决于您看到的设备）。
-5.	右键单击所连接的设备的名称，然后选择“更新驱动程序软件”。
-6.	在硬件更新向导中，选择“浏览计算机以查找驱动程序软件” ，然后单击“下一步”。
-7.	单击“浏览”，然后找到 USB 驱动程序文件夹。例如，我的Google USB 驱动程序位于E:\Android\Sdk\extras\google\usb_driver\。
-8.	单击“下一步”安装驱动程序。
-==**建议可以查看官方手册**==：[链接](https://developer.android.com/studio/run/device?hl=zh-cn)
-
-5.**电脑上已全部配置完成，可以到手机端进行操作**，全部调试完成后用USB线将移动设备与电脑连接起来，在命令行测试电脑端是否已经成功连接该设备，找到你下载Android SDK下platform-tools的路径，我的路径为E:\Android\Sdk\platform-tools，具体操作如下，出现方框中的内容即为成功，若不显示，可能是端口已被占用，输入adb kill-server，再输入adb devices即可
-**接下来到Unity上进行操作**
-
-![img](/img/csdn/A25.jpeg)
 
 ### 手机上
 #### 安装Unity Remote 5
