@@ -61,61 +61,33 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 
 #### 运行平台 Android / WebGL
 
+![img](/img/csdn/works/SmilingSquare1.jpg)
+
+![img](/img/csdn/works/SmilingSquare2.jpg)
+
+![img](/img/csdn/works/SmilingSquare3.jpg)
+
+![img](/img/csdn/works/SmilingSquare4.jpg)
+
+![img](/img/csdn/works/SmilingSquare5.jpg)
+
+![img](/img/csdn/works/SmilingSquare6.jpg)
+
+![img](/img/csdn/works/SmilingSquare7.jpg)
+
+![img](/img/csdn/works/SmilingSquare8.jpg)
+
+
 
 ​
-
-
-
 ### 手机上
 #### 安装Unity Remote 5
 **图标如下**
 
-![img](/img/csdn/A26.png)
 
 #### Android端需要打开开发者模式
 
-1.点击手机的设置
 
-![img](/img/csdn/A27.png)
-
-2.打开后找到“关于手机”，进入并连续点击版本号7次（一般情况），开启开发者模式，如图所示
-
-![img](/img/csdn/A28.png)
-
-3.接着找到系统和更新，进入后选择开发者人员选项，然后打开开发者人员选项
-
-![img](/img/csdn/A29.png)
-
-  4.下滑找到USB调试和“仅充电”模式下允许ADB调试并打开，找到选择USB配置，选择RNDIS（USB以太网），一定不要设置为“仅充电” 具体操作如下
-
-![img](/img/csdn/A30.png)
-
-![img](/img/csdn/A31.png)
-
-### Untiy
-#### 编辑器Unity Remote插件安装
-1.打开Unity, 在上方菜单栏找到Window—>Package Manager，搜索Input System进行安装，如下
-
-![img](/img/csdn/A32.png)
-
-2.然后我们需要先安装InputSystem插件，在Input System右边的属性面板找到Samples并点击，下滑找到Unity Remote，选择Import进行导入，如图所示
-
-![img](/img/csdn/A33.png)
-
-![img](/img/csdn/A34.png)
-
-#### 配置
-1.在Unity上方菜单栏中找到File——>Build Settings,将平台从Windows切换到Android，没有安卓平台的小伙伴需要先进行下载，点击框住的区域即可，具体操作如下
-
-![img](/img/csdn/A35.png)
-
-2.在Unity上方菜单栏中找到Edit——>Project Settings，打开Editor，找到Device选择Any Android Device，操作如下（如果选择对应平台后还没有出现就拔掉数据线后进行重试）
-
-![img](/img/csdn/A36.png)
-
-3.可能Unity没有识别到你的Android SDK，所以需要手动指定路径，在Unity上方菜单栏中找到Edit——>Preferences——>External Tools，下滑找到**Android SDK Tools Installed with Unity (recommended)**，点击Browse，将之前安装的Android SDK 路径输入即可
-
-![img](/img/csdn/A37.png)
 
 4.全部完成后关闭Unity，点击手机上的Unity Remote 5的图标，（**此时确保手机与电脑已通过USB连接，手机已打开开发者模式**），**重新启动Unity**，点击运行你的游戏，此时手机端与电脑端会同步显示画面，可以继续进行你的创作啦！
 ==**注**==：不显示画面可能是因为USB数据线的问题(不稳定)，请换一根再进行尝试
