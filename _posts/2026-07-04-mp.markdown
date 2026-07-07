@@ -19,7 +19,8 @@ tags:
 # 作品集
 ## 一、展示
 
-github：https://github.com/guoguo-cc/Personal-work-collection（作品集视频地址）或百度网盘链接: https://pan.baidu.com/s/1kwRk9fRMEiOFPzGywo1m2w?pwd=d4a3 提取码: d4a3
+github：https://github.com/guoguo-cc/Personal-work-collection（作品集视频地址）
+        或百度网盘链接: https://pan.baidu.com/s/1kwRk9fRMEiOFPzGywo1m2w?pwd=d4a3 提取码: d4a3
 
 CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
   
