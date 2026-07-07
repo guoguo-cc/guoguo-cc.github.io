@@ -68,12 +68,19 @@
     </a>
   </li>
   {% endif %}
-  {% if site.csdn_username %}
+  {% if site.csdn_url %}
   <li>
     <a target="_blank" href="{{ site.csdn_url }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-stack-1x fa-inverse">C</i>
+        <img src="{{ '/img/icons/csdn.svg' | relative_url }}"
+           alt="CSDN"
+           style="position:absolute;
+                  top:50%;
+                  left:50%;
+                  transform:translate(-50%,-50%);
+                  width:18px;
+                  height:18px;">
       </span>
     </a>
   </li>
