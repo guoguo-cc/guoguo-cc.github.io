@@ -46,9 +46,19 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 
 ![img](/img/csdn/works/Rower3.jpg) 
 
+![img](/img/csdn/works/multiplayer1.jpg) 
+
+![img](/img/csdn/works/multiplayer2.jpg) 
+
+![img](/img/csdn/works/record1.jpg) 
+
+![img](/img/csdn/works/record2.jpg) 
+
 ### 2.小娱大话骰（多人单机棋牌）
 
-1.游戏内容展示
+   **本人负责开发模块：** 负责项目开发全流程，包括“叫骰劈酒”核心玩法的多人回合制游戏逻辑设计与实现、Addressables 资源分包与异步加载，Android 与 WebGL 双平台适配及打包部署、客户端性能优化，以及 WebGL 远程资源加载环境搭建与上线。
+   
+   **项目类型：** 商业项目（已上线）
 
 ![img](/img/csdn/works/Dice1.jpg)
 
@@ -62,7 +72,9 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 
 ### 3.微笑方格（独立开发）
 
-#### 运行平台 Android / WebGL
+   **本人负责开发模块：** 独立负责项目全流程开发，包括单点触控角色控制、物理碰撞与反弹机制、宝藏收集及通关判定等核心玩法实现，关卡系统与多场景管理、Animator 动画状态机、粒子特效反馈、DOTween 界面动画、本地数据持久化（PlayerPrefs + JSON）及客户端性能优化。
+   
+   **项目类型：** 个人独立项目
 
 ![img](/img/csdn/works/SmilingSquare1.jpg)
 
@@ -82,24 +94,8 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 
 
 
-​
-### 手机上
-#### 安装Unity Remote 5
-**图标如下**
-
-
-#### Android端需要打开开发者模式
-
-
-
-4.全部完成后关闭Unity，点击手机上的Unity Remote 5的图标，（**此时确保手机与电脑已通过USB连接，手机已打开开发者模式**），**重新启动Unity**，点击运行你的游戏，此时手机端与电脑端会同步显示画面，可以继续进行你的创作啦！
-==**注**==：不显示画面可能是因为USB数据线的问题(不稳定)，请换一根再进行尝试
-
-![img](/img/csdn/A38.png)
        
-**文章到这里就结束了，感谢各位小伙伴们观看到这里，希望我的分享可以给你们带来帮助，这将是我不断创作的巨大动力！**
+**文章到这里就结束了，感谢各位老师观看到这里，希望今后可以创造出更多的作品展示给大家！**
 
-**==推荐视频==：Unity移动端入门 - Android那些事（2018版）_哔哩哔哩_bilibili**      [链接](https://www.bilibili.com/video/BV1SN411h7pp/?p&vd_source=a4ea1b80fd4f53aadee944665de0d6d5)
-**==推荐手册==**：**Unity Remote - Unity 手册** [链接](https://docs.unity3d.com/cn/2019.4/Manual/UnityRemote5.html)，
-**Android 调试桥 (adb) - Android 手册**  [链接](https://developer.android.com/tools/adb?hl=zh-cn#issuingcommands)
+
             
