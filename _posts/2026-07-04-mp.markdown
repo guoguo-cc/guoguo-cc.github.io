@@ -54,7 +54,7 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 
 ![img](/img/csdn/works/record2.jpg) 
 
-### 2.小娱大话骰（多人单机棋牌）
+### 2.小娱大话骰（单机回合制棋牌）
 
    **本人负责开发模块：** 负责项目开发全流程，包括“叫骰劈酒”核心玩法的多人回合制游戏逻辑设计与实现、Addressables 资源分包与异步加载，Android 与 WebGL 双平台适配及打包部署、客户端性能优化，以及 WebGL 远程资源加载环境搭建与上线。
    
