@@ -51,11 +51,11 @@ CSDN博客：https://blog.csdn.net/weixin_62155176?type=blog
 
 ![img](/img/csdn/works/record2.jpg) 
 
-![img](/img/csdn/works/role1.jpg) 
+![img](/img/csdn/works/role1.png) 
 
-![img](/img/csdn/works/role2.jpg) 
+![img](/img/csdn/works/role2.png) 
 
-![img](/img/csdn/works/role3.jpg) 
+![img](/img/csdn/works/role3.png) 
 
 ### 2.小娱大话骰（单机回合制棋牌）
 
