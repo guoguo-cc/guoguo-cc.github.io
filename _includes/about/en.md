@@ -1,4 +1,4 @@
-Hello, I'm Che Wenshui (you can also call me Guoguo). 
+Hello, I'm Che Wenshuai (you can also call me Guoguo). 
 
 A game developer passionate about technical exploration, hands-on experimentation, and committed to continuous learning. 
 
